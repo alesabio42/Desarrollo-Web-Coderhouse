@@ -28,15 +28,15 @@ El porfolio incluirá secciones clave, como:
     - Diseño en Figma: (https://www.figma.com/file/hLwZ3wLlK2CXUA0J190AjQ/Portfolio?type=design&node-id=0%3A1&mode=design&t=MvcDbcxx4ZC7PAzm-1)
 
 2. **Segunda Preentrega del Proyecto Final**
-    - Fecha de entrega: 25/03/2024
-    - Descripción: 
+    - Fecha de entrega: 01/04/2024
+    - Descripción: Se desarrollan dos páginas ( Home y Sobre mi) adaptado a la vista mobile (480px) y la vista desktop, generando un diseño responsive. Además se ha agregado el uso de Bootstrap, Grids y Flexbox.
 
 3. **Tercera Preentrega del Proyecto Final**
-    - Fecha de entrega: 08/04/2024
+    - Fecha de entrega: 10/04/2024
     - Descripción: La tercera entrega consistirá en la presentación del porfolio finalizado, listo para ser desplegado en un entorno de producción.
 
 4. **Entrega del Proyecto Final**
-    - Fecha de entrega: 17/04/2024
+    - Fecha de entrega: 22/04/2024
     - Descripción: 
 
 
