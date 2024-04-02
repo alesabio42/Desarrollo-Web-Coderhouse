@@ -20,11 +20,12 @@ body {
     box-sizing: border-box; /* Considerar el relleno y el borde dentro del ancho total */
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+.navbar-nav .nav-link:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+    color: black; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+    width: 100%; /* Asegura que el enlace ocupe todo el ancho del navbar */
+    display: block; /* Asegura que el enlace sea un bloque y ocupe todo el espacio disponible */
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -37,3 +38,5 @@ body {
         float: none; /* Cancelar el flotante para que los enlaces aparezcan uno debajo del otro */
     }
 }
+
+

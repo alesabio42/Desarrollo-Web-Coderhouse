@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
-    <!-- Enlaces a los archivos de estilos CSS -->
-    <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./assets/css/bodyhome.css">
-    <!-- Enlaces a los archivos de scripts JavaScript -->
-    <!-- <script src="script.js"></script> -->
+    <title>Sobre-mi</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
 </head>
 <body>
 
     <!-- Contenido de la página -->
 
     <header>
-        <!-- Encabezado de la página -->
-
-            <nav class="navbar">
-              <div class="container">
-                <a href="../index.html">Home</a>
-                <a href="./sobre-mi.html">Sobre mí</a>
-                <a href="./experiencia-laboral.html">Experiencia Laboral</a>
-                <a href="./formacion-academica.html">Formación Académica</a>
-                <a href="./contacto.html">Contacto</a>
-            </div>
-            </nav>
-
-    </header>
-
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Sobre mí</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/experiencia-laboral.html">Experiencia Laboral</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/formacion-academica.html">Formación Académica</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="d-flex ml-auto align-items-center"> <!-- Agregado d-flex y align-items-center -->
+                  <button class="btn btn-outline-light border-0" id="btn-english-flag">
+                      <img src="../assets/img/555417.png" alt="Bandera de Inglaterra" style="height: 40px;">
+                  </button>
+              </div>
+          </div>
+      </nav>
+  </header>
+  
     <main>
         <!-- Contenido principal de la página -->
-        <div class='i'>
-    
-            <div class='i-left'>
-           
-              <div class='i-left-wrapper'>
-                <h2 class='i-intro'>Hola, mi nombre es</h2>
-                <h1 class='i-name'>Sabio Bezus</h1>
-                <h1 class='i-name'>Alejandro German</h1>
-                <div class='i-title'>
-                  <div class='i-title-wrapper'>
-                    <div class='i-title-item'>Desarrollador Web Front End y Back End</div>
-                    <div class='i-title-item'>Estudiante de Contador Público</div>
-                  </div>
-                </div>
-                <p class='i-desc'>
-                  Bienvenido a mi perfil, aquí podrás encontrar una descripción de mi formación académica, experiencia laboral y proyectos.
-                </p>
-              </div>
-          
-            </div>
-          
-            <div class='i-right'>
-              <div class='i-bg'></div>
-              <img src="./assets/img/Profile.png" alt='' class='i-img' />
-            </div>
-          
+        <div class='i-left'>
+          <div class='i-left-wrapper'>
+              <p class='i-desc'>
+                  ¡Hola! Soy Sabio Bezus Alejandro, un estudiante avanzado de Contador Público en la Universidad Nacional de Misiones, originario de Corrientes. Mi pasión por los números y el análisis financiero me ha llevado a sumergirme en el mundo de la contabilidad, donde estoy adquiriendo conocimientos sólidos y habilidades que complementan mi formación académica.
+              </p>
+              <p class='i-desc'>
+                  Durante la pandemia, me encontré ante la oportunidad de explorar nuevos horizontes y decidí aventurarme en el campo del desarrollo web. La creciente globalización de los trabajos remotos me inspiró a adquirir habilidades adicionales, así que me embarqué en una serie de cursos para convertirme en un desarrollador web competente.
+              </p>
+              <p class='i-desc'>
+                  Esta diversificación en mis estudios me ha proporcionado una perspectiva única y una combinación de habilidades que van más allá de los límites convencionales. Mi enfoque analítico y meticuloso, perfeccionado en la contabilidad, se combina con mi creatividad y destreza técnica en el desarrollo web.
+              </p>
+              <p class='i-desc'>
+                  Mi objetivo es fusionar mi sólida formación en Contaduría con mis habilidades en desarrollo web para ofrecer soluciones integrales y eficientes a los desafíos empresariales modernos. Estoy emocionado por la oportunidad de contribuir al mundo laboral con un enfoque multidisciplinario y adaptativo.
+              </p>
+              <p class='i-desc'>
+                  ¡Gracias por visitar mi portfolio! Siéntete libre de explorar y conocer más sobre mi viaje educativo y mis proyectos. Estoy ansioso por las emocionantes oportunidades que el futuro tiene reservadas.
+              </p>
           </div>
-
-
+      </div>
+      
+      <div class='i-right'>
+          <div class='i-bg'></div>
+          <img src="../assets/img/Profile.png" alt='' class='i-img' />
+      </div>
     </main>
 
     <footer>
