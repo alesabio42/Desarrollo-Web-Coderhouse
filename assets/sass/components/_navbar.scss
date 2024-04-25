@@ -1,0 +1,97 @@
+// Estilos para el navbar
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #FF5733, transparent); // Corregido
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.841);
+    z-index: 999;
+    transition: 0.6s;
+
+    // Estilos para la lista de navegación
+    .navbar-nav {
+        font-family: $font-primary;
+        font-weight: bold; 
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        // Estilos para los elementos de la lista de navegación
+        .nav-item {
+            margin: 0 10px;
+      
+        }
+    }
+
+
+
+    // Media query para dispositivos con un ancho máximo de 480px
+    @media screen and (max-width: 480px) {
+        .navbar-collapse {
+            justify-content: flex-start;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .ml-auto {
+            margin-left: auto;
+        }
+        #btn-english-flag {
+            height: auto;
+            max-height: 40px;
+        }
+        #btn-english-flag img {
+            height: 100%;
+            width: auto;
+            max-height: 40px;
+        }
+        .nav {
+            width: 100%;
+        }
+        .btn-menu-mobile {
+            display: inline-flex;
+        }
+        .menu-items {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 100px);
+            background-color: rgba(255, 99, 71, 0.89);
+            text-align: center;
+            flex-direction: column;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+
+            // Estilos para los elementos de menú
+            li {
+                margin: 30px;
+
+                a {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: white;
+                        text-shadow: 0 0 10px rgb(175, 16, 16);
+                        text-decoration: none;
+                        transform: scaleX(1.1) scaleY(1.1);
+                    }
+                }
+            }
+
+            // Clase para mostrar los elementos de menú
+            &.show {
+                transform: translateY(0);
+            }
+        }
+    }
+}

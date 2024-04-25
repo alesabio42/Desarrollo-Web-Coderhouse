@@ -1,0 +1,28 @@
+.i-title {
+  font-family: $font-primary;
+  height: 70px;
+  overflow: hidden;
+
+  &-item {
+    height: 70px;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(4, 48, 242);
+    display: flex;
+    align-items: center;
+  }
+
+  &-wrapper {
+    height: 100%;
+    animation: move 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+}

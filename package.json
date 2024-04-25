@@ -1,0 +1,21 @@
+{
+  "name": "desarrollo-web-coderhouse",
+  "version": "1.0.0",
+  "description": "Este repositorio tiene como objetivo centralizar las entregas correspondientes al curso de Desarrollo Web de Coderhouse, en la comisión 53830.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass ./assets/sass/style.scss ./assets/css/style.css",
+    "watch-css": "sass --watch ./assets/sass/style.scss ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesabio42/Desarrollo-Web-Coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesabio42/Desarrollo-Web-Coderhouse/issues"
+  },
+  "homepage": "https://github.com/alesabio42/Desarrollo-Web-Coderhouse#readme"
+}

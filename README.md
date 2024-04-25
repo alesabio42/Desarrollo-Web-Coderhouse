@@ -33,7 +33,7 @@ El porfolio incluirá secciones clave, como:
 
 3. **Tercera Preentrega del Proyecto Final**
     - Fecha de entrega: 10/04/2024
-    - Descripción: La tercera entrega consistirá en la presentación del porfolio finalizado, listo para ser desplegado en un entorno de producción.
+    - Descripción: En esta entrega se agrega el uso de SASS y animaciones.
 
 4. **Entrega del Proyecto Final**
     - Fecha de entrega: 22/04/2024
