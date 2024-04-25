@@ -41,13 +41,13 @@ El porfolio incluirá secciones clave, como:
 
 
 ## Instrucciones de Uso
-
 1. Clona este repositorio en tu máquina local.
 2. Abrí el proyecto en Visual Studio Code.
 3. Instalar la extensión "Live Server".
 4. Haz clic derecho en el archivo index.html y selecciona "Open with Live Server"
 5. Se abrirá la página en tu navegador predeterminado.
 
-
+## Ingreso a la Web.
+Puede ingresar entrando en el siguiente link: https://alesabio42.github.io/Desarrollo-Web-Coderhouse/
 
  
