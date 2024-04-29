@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: linear-gradient(to top, #FF5733, transparent);
 }
@@ -191,6 +192,178 @@ main .i .i-right .i-img {
     object-fit: cover;
     object-position: top;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, #FF5733, transparent);
+}
+.container .top-section {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 500px;
+}
+.container .left-column {
+  flex-grow: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .left-column .content {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+.container .left-column .content .title {
+  text-align: center;
+  color: #ff0000;
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+}
+.container .left-column .content .subtitle {
+  text-align: center;
+  color: #333333;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.container .left-column .content .description {
+  text-align: center;
+  color: #666666;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.container .right-column {
+  flex-grow: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container .right-column .profile-img {
+  width: auto;
+  max-height: 80%;
+  mask-image: linear-gradient(black 80%, transparent 100%);
+  object-fit: cover;
+  animation: fadeInRight;
+  animation-duration: 2s;
+}
+@media screen and (max-width: 480px) {
+  .container .top-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .container .left-column {
+    width: auto;
+    display: block;
+    flex-direction: column;
+    order: 2;
+  }
+  .container .left-column .content {
+    text-align: center;
+    height: auto;
+    padding: 50px;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container .left-column .content > * {
+    margin-bottom: 20px;
+  }
+  .container .right-column {
+    width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .container .right-column .profile-img {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+}
+.container .bottom-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .bottom-section .timeline-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.container .bottom-section .menu-item {
+  background-color: #ec0707;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.container .bottom-section .timeline {
+  display: none;
+  max-width: 400px;
+  width: 100%;
+}
+.container .bottom-section .timeline.active {
+  display: block;
+}
+.container .bottom-section .timeline-event {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+.container .bottom-section .timeline-event .div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.container .bottom-section .timeline-event:last-child {
+  margin-bottom: 0;
+}
+.container .bottom-section .timeline-event:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Posiciona la línea en el centro del lado izquierdo */
+  transform: translateX(-93%); /* Ajusta la posición de la línea */
+  width: calc(50% - 5px); /* Ajusta el ancho de la línea para atravesar la columna izquierda */
+  border-left: 1px solid black; /* Agrega borde izquierdo para la línea */
+}
+.container .bottom-section .event-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+.container .bottom-section .event-details {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .custom-left-wrapper {

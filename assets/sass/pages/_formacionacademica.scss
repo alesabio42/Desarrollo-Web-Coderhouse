@@ -1,0 +1,203 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, #FF5733, transparent);
+
+
+
+    
+    .top-section {
+        display: flex;
+        flex-grow: 1;
+        overflow: hidden;
+        height: 500px;
+    }
+    
+    
+    .left-column {
+        flex-grow: 1;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .content {
+            width: 100%;
+            text-align: center;
+            height: auto;
+    
+            .title {
+                text-align: center;
+                color: #ff0000;
+                font-size: 48px;
+                font-family: "Roboto", sans-serif;
+            }
+    
+            .subtitle {
+                text-align: center;
+                color: #333333;
+                font-size: 25px;
+                font-family: "Roboto", sans-serif;
+            }
+    
+            .description {
+                text-align: center;
+                color: #666666;
+                font-size: 20px;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+    
+    .right-column {
+        flex-grow: 1;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+        .profile-img {
+            width: auto;
+            max-height: 80%;
+            mask-image: linear-gradient(black 80%, transparent 100%);
+            object-fit: cover;
+            animation: fadeInRight;
+            animation-duration: 2s;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .top-section {
+            flex-direction: column;
+            height: auto; // Ajusta la altura según sea necesario para adaptarse al contenido
+        }
+        
+        .left-column {
+            width: auto;
+            display: block;
+            flex-direction: column;
+            order: 2;
+        
+            .content {
+                text-align: center;
+                height: auto;
+                padding: 50px;
+                height: 50%;
+                flex-direction: column;
+                justify-content: space-between;
+        
+                > * {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        .right-column {
+            width: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center; // Centra horizontalmente en el eje principal
+            position: relative; // Asegura que los elementos absolutos sean posicionados relativamente a este contenedor
+        
+            .profile-img {
+                justify-content: center; // Centra horizontalmente en el eje principal
+                width: 100%;
+                max-width: 100%; // Asegura que la imagen no supere el ancho de la columna
+                height: auto; // Ajusta automáticamente la altura según el ancho
+                z-index: 1; // Asegura que esté delante de .background-overlay
+            }
+        }
+    }
+    
+    
+
+      
+    .bottom-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .timeline-menu {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            background-color: #ec0707;
+            color: white;
+            border: none;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .timeline {
+            display: none;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .timeline.active {
+            display: block;
+        }
+
+        .timeline-event {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+            gap: 10px;
+            padding: 10px;
+            position: relative; 
+
+            .div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%; /* Posiciona la línea en el centro del lado izquierdo */
+                transform: translateX(-93%); /* Ajusta la posición de la línea */
+                width: calc(50% - 5px); /* Ajusta el ancho de la línea para atravesar la columna izquierda */
+                border-left: 1px solid black; /* Agrega borde izquierdo para la línea */
+              }
+        }
+
+        .event-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .event-details {
+            color: #666666;
+            font-size: 16px;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}
