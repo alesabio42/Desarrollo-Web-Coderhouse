@@ -3,6 +3,109 @@ body {
   background: linear-gradient(to top, #FF5733, transparent);
 }
 
+.buttoncv {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255, 0, 0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+.buttoncv span {
+  margin: 10px;
+}
+.buttoncv::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+.buttoncv:hover {
+  color: #fff;
+  border: 1px solid rgb(255, 0, 0);
+}
+.buttoncv:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+
+.card {
+  height: 20rem;
+  width: 15rem;
+  background: lightgrey;
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #f44b49 0%, #ffcc70 50%, #dfe994 100%);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s ease-in-out;
+  margin: auto;
+}
+.card .heading {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1rem;
+  font-size: large;
+}
+.card .input-div {
+  display: flex;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.card .input-div input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 12rem;
+  padding: 8px;
+  outline: none;
+}
+.card .input-div input::placeholder {
+  color: black;
+}
+.card .input-div input:focus, .card .input-div input:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card .button-div {
+  text-align: center;
+}
+.card .button-div .submit {
+  margin-top: 3rem;
+  padding: 8px 3rem;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card .button-div .submit:hover {
+  box-shadow: rgba(44, 43, 43, 0.664) 5px 5px, rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px, rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -374,28 +477,15 @@ main .i .i-right .i-img {
 }
 .custom-left-wrapper .custom-text-color {
   color: rgb(0, 0, 0);
-  font-size: 28px;
+  font-size: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 10px;
 }
 .custom-left-wrapper .custom-text {
-  font-size: 20px;
+  font-size: 24px;
   color: rgb(0, 0, 0);
   text-align: justify;
-}
-.custom-left-wrapper .download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff0000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
-}
-.custom-left-wrapper .download-button:hover {
-  background-color: #0056b3;
 }
 
 /*# sourceMappingURL=style.css.map */

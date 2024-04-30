@@ -74,7 +74,7 @@
     @media screen and (max-width: 480px) {
         .top-section {
             flex-direction: column;
-            height: auto; // Ajusta la altura según sea necesario para adaptarse al contenido
+            height: auto; 
         }
         
         .left-column {
@@ -101,15 +101,15 @@
             width: auto;
             width: 100%;
             display: flex;
-            justify-content: center; // Centra horizontalmente en el eje principal
-            position: relative; // Asegura que los elementos absolutos sean posicionados relativamente a este contenedor
+            justify-content: center; 
+            position: relative; 
         
             .profile-img {
-                justify-content: center; // Centra horizontalmente en el eje principal
+                justify-content: center; 
                 width: 100%;
-                max-width: 100%; // Asegura que la imagen no supere el ancho de la columna
-                height: auto; // Ajusta automáticamente la altura según el ancho
-                z-index: 1; // Asegura que esté delante de .background-overlay
+                max-width: 100%; 
+                height: auto; 
+                z-index: 1; 
             }
         }
     }
