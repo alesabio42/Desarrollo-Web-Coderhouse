@@ -6,17 +6,12 @@
     max-width: 100%;
     padding: 20px;
     background: linear-gradient(to top, #FF5733, transparent);
-
-
-
-    
     .top-section {
         display: flex;
         flex-grow: 1;
         overflow: hidden;
         height: 500px;
     }
-    
     
     .left-column {
         flex-grow: 1;
@@ -49,6 +44,19 @@
                 color: #666666;
                 font-size: 20px;
                 font-family: "Roboto", sans-serif;
+            }
+            @media (max-width: 800px) {
+                .title {
+                    font-size: 36px;
+                }
+            
+                .subtitle {
+                    font-size: 20px; 
+                }
+            
+                .description {
+                    font-size: 16px; 
+                }
             }
         }
     }

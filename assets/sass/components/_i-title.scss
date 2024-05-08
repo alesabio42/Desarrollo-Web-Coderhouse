@@ -7,7 +7,7 @@
     height: 70px;
     font-size: 21px;
     font-weight: bold;
-    color: rgb(4, 48, 242);
+    color: rgb(255, 0, 0);
     display: flex;
     align-items: center;
   }
@@ -25,4 +25,27 @@
       transform: translateY(-100%);
     }
   }
+
+  @media (max-width: 480px) {
+    height: auto;
+    overflow: visible;
+
+    &-item {
+      height: auto;
+    }
+
+    &-wrapper {
+      height: 100%;
+      animation: none;
+
+    }
+  }
 }
+.i-desc {
+  font-family: $font-primary;
+  height: 70px;
+    font-size: 21px;
+
+
+}
+
