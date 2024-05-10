@@ -1,10 +1,11 @@
-$primary-color: #333;
+$primary-color: linear-gradient(to buttons, #FF5733, transparent);
 
 $footer-text-color: #0f0000;
 
 footer {
   color: $footer-text-color;
   padding: 20px 0;
+  background: linear-gradient(to top, #FF5733, transparent); 
 }
 
 .footer-grid {
@@ -42,9 +43,10 @@ footer {
     width: 30px;
     height: auto;
   }
+  a:hover {
+    transform: scale(1.2);
+  }
 }
-
-
 
 .footer-column p {
   text-align: center;

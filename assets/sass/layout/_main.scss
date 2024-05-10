@@ -3,7 +3,7 @@ main {
       display: flex;
       height: 100vh;
   
-      // Estilos para la sección izquierda
+
       .i-left {
         flex: 1;
         display: flex;
@@ -20,7 +20,7 @@ main {
           flex-direction: column;
           justify-content: space-around;
   
-          // Estilos para los elementos de texto
+
           .i-intro {
             font-family: $font-primary;
             color: rgb(1, 5, 22);
@@ -38,7 +38,7 @@ main {
         }
       }
   
-      // Estilos para la sección derecha
+
       .i-right {
         flex: 1;
         position: relative;
@@ -58,12 +58,10 @@ main {
             animation-duration: 2s;
         }
     }
-    
-  
-      // Media query para dispositivos con un ancho máximo de 480px
+
       @media screen and (max-width: 480px) {
         flex-direction: column;
-        height: 150vh; // Ajusta la altura según sea necesario para adaptarse al contenido
+        height: 150vh; 
   
         .i-left {
           display: block;

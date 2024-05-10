@@ -27,6 +27,7 @@
     
             .title {
                 text-align: center;
+                font-weight: bold;
                 color: #ff0000;
                 font-size: 48px;
                 font-family: "Roboto", sans-serif;
@@ -41,7 +42,7 @@
     
             .description {
                 text-align: center;
-                color: #666666;
+                color: #401f1f;
                 font-size: 20px;
                 font-family: "Roboto", sans-serif;
             }
@@ -146,8 +147,18 @@
             padding: 8px 16px;
             cursor: pointer;
             font-size: 14px;
+            transition: transform 0.3s ease; 
+            border-radius: 8px;
+            margin-right: 10px; 
+      
+            &:last-child {
+              margin-right: 0; 
+            }
+      
+            &:hover {
+              transform: scale(1.1);
+            }
         }
-
         .timeline {
             display: none;
             max-width: 400px;
@@ -185,27 +196,57 @@
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                left: 50%; /* Posiciona la línea en el centro del lado izquierdo */
-                transform: translateX(-93%); /* Ajusta la posición de la línea */
-                width: calc(50% - 5px); /* Ajusta el ancho de la línea para atravesar la columna izquierda */
-                border-left: 1px solid black; /* Agrega borde izquierdo para la línea */
+                left: 52%; 
+                transform: translateX(-93%); 
+                width: calc(50% - 5px); 
+                border-left: 3px solid rgb(255, 8, 8); 
               }
         }
 
         .event-circle {
-            width: 20px;
-            height: 20px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
-            background-color: #333;
+            background-color: #fb0606;
             margin-right: 10px;
             position: relative;
             z-index: 1;
-        }
+            transition: transform 0.3s ease; /* Agrega una transición suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .clip-icon {
+                color: white;
+                font-size: 20px;
+              }
+            &:hover {
+              transform: scale(1.1); /* Escala el tamaño del círculo al 110% */
+            }
+
+
+          }
 
         .event-details {
-            color: #666666;
             font-size: 16px;
             font-family: "Roboto", sans-serif;
+          
+            h3 {
+              color: #ec0303; 
+              font-weight: bold;
+              font-size: 25px;
+              margin-bottom: 10px; 
+              text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.495);
+            }
+          
+            p {
+              color: #000000; 
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
         }
     }
+}
+.custom-modal-background  {
+    color: rgb(223, 223, 107);
+    background-color: rgb(228, 53, 53);
 }
