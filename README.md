@@ -50,7 +50,7 @@ El porfolio incluirá secciones clave, como:
 ## Ingreso a la Web.
 Puede ingresar entrando en los siguientes enlaces: 
 Github -- https://alesabio42.github.io/Desarrollo-Web-Coderhouse/
-Netlify -- [![Netlify Status](https://api.netlify.com/api/v1/badges/3cb97f03-c89f-4bdd-838b-462a53566107/deploy-status)](https://app.netlify.com/sites/alejandrosabio/deploys)
+Netlify -- https://alejandrosabio.netlify.app/
 
 
  
