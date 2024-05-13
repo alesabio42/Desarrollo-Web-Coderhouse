@@ -8,7 +8,7 @@ El proyecto final consistirá en el desarrollo de un porfolio personal, que pres
 
 ## Características del Porfolio
 
-El porfolio incluirá secciones clave, como:
+El portafolio incluirá secciones clave, como:
 
 - **Home:** Presentación incial.
 
@@ -16,7 +16,7 @@ El porfolio incluirá secciones clave, como:
   
 - **Experiencia Laboral:** Detalles sobre los diversos empleos, duración, roles desempeñados, responsabilidades y logros laborales.
 
-- **Formación Académica:** Información sobre la educación y calificaciones académicas.
+- **Formación Académica:** Información sobre la educación y certificaciones académicas.
 
 - **Contacto:** Formulario de contacto o información para facilitar la comunicación.
 
@@ -36,20 +36,22 @@ El porfolio incluirá secciones clave, como:
     - Descripción: En esta entrega se agrega el uso de SASS y animaciones.
 
 4. **Entrega del Proyecto Final**
-    - Fecha de entrega: 22/04/2024
-    - Descripción: 
+    - Fecha de entrega: 02/05/2024
 
 
 ## Instrucciones de Uso
 1. Clona este repositorio en tu máquina local.
 2. Abrí el proyecto en Visual Studio Code.
 3. Instalar la extensión "Live Server".
-4. Haz clic derecho en el archivo index.html y selecciona "Open with Live Server"
+4. Haz clic derecho en el archivo index.html y selecciona "Open with Live Server".
 5. Se abrirá la página en tu navegador predeterminado.
 
 ## Ingreso a la Web.
-Puede ingresar entrando en los siguientes enlaces: 
+
+Puede ingresar entrando en los siguientes enlaces:
+
 Github -- https://alesabio42.github.io/Desarrollo-Web-Coderhouse/
+
 Netlify -- https://alejandrosabio.netlify.app/
 
 
