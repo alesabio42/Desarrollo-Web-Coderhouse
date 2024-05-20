@@ -294,6 +294,9 @@ header {
   width: 100%;
 }
 
+main {
+  margin-bottom: 10px;
+}
 main .i {
   display: flex;
   height: 100vh;
