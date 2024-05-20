@@ -60,6 +60,9 @@ main {
     }
 
       @media screen and (max-width: 480px) {
+
+        
+
         flex-direction: column;
         height: 150vh; 
   
@@ -75,7 +78,8 @@ main {
             justify-content: space-between;
   
             > * {
-              margin-bottom: 20px;
+              margin-bottom: 40px;
+              
             }
           }
         }
