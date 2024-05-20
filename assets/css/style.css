@@ -186,18 +186,20 @@ nav .navbar-nav .nav-item {
   }
 }
 
+/* Variables globales */
+/* Estilos para .i-title */
 .i-title {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, sans-serif;
   height: 70px;
   overflow: hidden;
 }
 .i-title-item {
-  height: 70px;
   font-size: 21px;
   font-weight: bold;
   color: rgb(255, 0, 0);
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .i-title-wrapper {
   height: 100%;
@@ -217,20 +219,28 @@ nav .navbar-nav .nav-item {
     overflow: visible;
   }
   .i-title-item {
-    height: auto;
+    font-size: 18px;
   }
   .i-title-wrapper {
-    height: 100%;
+    height: auto;
     animation: none;
   }
 }
 
 .i-desc {
-  font-family: "Roboto", sans-serif;
-  height: 70px;
+  font-family: Arial, sans-serif;
   font-size: 21px;
+  margin-bottom: 20px;
 }
 
+@media (max-width: 400px) {
+  main {
+    margin-bottom: 20px;
+  }
+  .i-desc {
+    font-size: 18px;
+  }
+}
 .laboral {
   display: flex;
   justify-content: center;
@@ -318,13 +328,13 @@ main .i .i-left .i-left-wrapper {
   justify-content: space-around;
 }
 main .i .i-left .i-left-wrapper .i-intro {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, sans-serif;
   color: rgb(1, 5, 22);
   font-size: 30px;
   font-weight: 1300;
 }
 main .i .i-left .i-left-wrapper .i-name {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 60px;
   font-weight: bold;
   text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.57);

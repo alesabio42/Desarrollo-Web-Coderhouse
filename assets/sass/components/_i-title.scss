@@ -1,15 +1,19 @@
+/* Variables globales */
+$font-primary: Arial, sans-serif;
+
+/* Estilos para .i-title */
 .i-title {
   font-family: $font-primary;
   height: 70px;
   overflow: hidden;
 
   &-item {
-    height: 70px;
     font-size: 21px;
     font-weight: bold;
     color: rgb(255, 0, 0);
     display: flex;
     align-items: center;
+    height: 100%; 
   }
 
   &-wrapper {
@@ -31,20 +35,29 @@
     overflow: visible;
 
     &-item {
-      height: auto;
+      font-size: 18px; 
     }
 
     &-wrapper {
-      height: 100%;
+      height: auto;
       animation: none;
-
     }
   }
 }
+
+
 .i-desc {
   font-family: $font-primary;
-  height: 70px;
-  font-size: 21px;
-
+  font-size: 21px; 
+  margin-bottom: 20px; 
 }
 
+@media (max-width: 400px) {
+  main {
+    margin-bottom: 20px; 
+  }
+
+  .i-desc {
+    font-size: 18px;
+  }
+}
